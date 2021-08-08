@@ -1,0 +1,130 @@
+/* Nav */
+
+body {
+  background-color: #000;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #f9c162 !important;
+}
+
+.nav-link {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  border: none !important;
+  color: #f9c162 !important;
+  border-radius: 15px 15px 0 0 !important;
+}
+
+.nav-link:hover {
+  background-color: #f3ce8d !important;
+  color: #000 !important;
+}
+
+.nav-link.active {
+  background-color: #f9c162 !important;
+  color: #000 !important;
+}
+
+.bi {
+  font-size: 2rem;
+}
+
+/* Games */
+
+.card {
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.btn-success:hover {
+  background-color: #3caa45;
+}
+
+.overlay {
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+/* Pagination */
+
+.page {
+  display: none;
+}
+.page-active {
+  display: flex;
+}
+
+.page-link {
+  margin-right: 10px;
+  color: #f9c162;
+  border-radius: 6px !important;
+  border: solid 2px #f9c162 !important;
+  background-color: #000 !important;
+}
+
+.page-link:hover,
+.page-item.active .page-link {
+  background-color: #f9c162 !important;
+  color: #000;
+}
+
+/*Faq*/
+
+h2 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.accordion-item {
+  background-color: #43321e !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+.accordion-button {
+  background-color: #43321e !important;
+  color: #f9c162 !important;
+  font-size: 1.5rem;
+  border-radius: 6px !important;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  content: "+";
+  color: #f9c162 !important;
+  font-weight: bold;
+  background-image: none;
+  transform: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  color: #f9c162 !important;
+  font-weight: bold;
+  background-image: none;
+  transform: none !important;
+}

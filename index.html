@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/slider-image-1.png" class="d-block w-100" alt="slider-1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-image-2.png" class="d-block w-100" alt="slider-2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slider-image-3.png" class="d-block w-100" alt="slider-3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <section class="container mt-2">
+    <ul class="nav nav-tabs row-cols-5" id="myTab" role="tablist">
+      <li class="nav-item col " role="presentation">
+        <button class="nav-link d-flex flex-column align-items-center active" id="home-tab" data-bs-toggle="tab"
+          data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+          <i class="bi bi-house"></i>
+          HOME
+        </button>
+      </li>
+      <li class="nav-item col" role="presentation">
+        <button class="nav-link d-flex flex-column align-items-center" id="egyptian-tab" data-bs-toggle="tab"
+          data-bs-target="#egyptian" type="button" role="tab" aria-controls="egyptian" aria-selected="false">
+          <i class="bi bi-alarm"></i>
+          EGYPTIAN
+        </button>
+      </li>
+      <li class="nav-item col" role="presentation">
+        <button class="nav-link d-flex flex-column align-items-center" id="space-tab" data-bs-toggle="tab"
+          data-bs-target="#space" type="button" role="tab" aria-controls="space" aria-selected="false">
+          <i class="bi bi-bag"></i>SPACE</button>
+      </li>
+      <li class="nav-item col" role="presentation">
+        <button class="nav-link  d-flex flex-column align-items-center" id="christmas-tab" data-bs-toggle="tab"
+          data-bs-target="#christmas" type="button" role="tab" aria-controls="christmas" aria-selected="false">
+          <i class="bi bi-bell"></i>CHRISTMAS</button>
+      </li>
+      <li class="nav-item col " role="presentation">
+        <button class="nav-link d-flex flex-column align-items-center" id="bonus-tab" data-bs-toggle="tab"
+          data-bs-target="#bonus" type="button" role="tab" aria-controls="bonus" aria-selected="false">
+          <i class="bi bi-bank"></i>
+          BONUS</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 page" id="page1">
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-1.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 1</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-2.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 2</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-3.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 3</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-4.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 4</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 5</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 9</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-10.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 10</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 page" id="page2">
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-3.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 1</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 2</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-2.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 3</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-4.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 4</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 5</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 9</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-10.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 10</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 page" id="page3">
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 1</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 2</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 3</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-4.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 4</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 5</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 9</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-10.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 10</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <nav class="container mt-5">
+          <ul id="pagination-demo" class="pagination justify-content-center">
+          </ul>
+        </nav>
+      </div>
+      <div class="tab-pane fade" id="egyptian" role="tabpanel" aria-labelledby="egyptian-tab">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 1</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 2</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 3</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-4.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 4</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 5</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 9</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-10.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 10</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="tab-pane fade" id="space" role="tabpanel" aria-labelledby="space-tab">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5" id="page2">
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-3.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 1</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 2</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-2.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 3</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-4.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 4</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 5</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 9</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-10.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 10</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="christmas" role="tabpanel" aria-labelledby="christmas-tab">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 ">
+
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-2.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 3</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-4.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 4</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-5.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 5</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="bonus" role="tabpanel" aria-labelledby="bonus-tab">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-6.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 6</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-7.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 7</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-8.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 8</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-9.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 9</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="card h-100 text-center ">
+              <img class="card-img" src="./images/game-10.jpg" />
+              <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
+                <h4 class="card-title text-white">Game 10</h4>
+                <a href="#" class="btn btn-success  text-dark ">Play Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="container mb-5">
+    <h2 class="mb-4">Faq</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Where can I send suggestions for games?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores vel aspernatur tempora. Eveniet
+              aspernatur sapiente, veritatis laboriosam, doloremque praesentium neque similique voluptas, quis ab sit
+              consequuntur ad! In, tenetur iusto?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Popular Qestion #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellendus expedita excepturi aut eos amet
+              aliquid corporis cumque tempora in, necessitatibus libero. Quibusdam tempora quod libero suscipit,
+              cupiditate modi sit!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Another Qestion
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi deleniti tempore ipsum
+              necessitatibus culpa alias dignissimos doloribus quam ducimus optio totam quasi soluta debitis officiis
+              repudiandae recusandae similique natus.
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"
+    integrity="sha512-frFP3ZxLshB4CErXkPVEXnd5ingvYYtYhE5qllGdZmcOlRKNEPbufyupfdSTNmoF5ICaQNO6SenXzOZvoGkiIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
